@@ -51,6 +51,13 @@ app.get('/bad',(req, res) => {
   })
 });
 
+app.get('/contact', (req, res) => {
+    res.render('contact.hbs',{
+      pageTitle: 'Contact Us',
+      welcomeMessage: 'harshadpatadia4@gmail.com'
+    });
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
